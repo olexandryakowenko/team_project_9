@@ -1,8 +1,8 @@
 {
-  "name": "parcel-project-template",
+  "name": "team_project_9",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://goitacademy.github.io/parcel-project-template",
+  "homepage": "https://olexandryakowenko.github.io/team_project_9/",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /parcel-project-template/"
