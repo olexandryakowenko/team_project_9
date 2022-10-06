@@ -1,0 +1,13 @@
+.section-title {
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 1.26;
+
+  &-light {
+    margin-bottom: 26px;
+  }
+
+  &-dark {
+    margin-bottom: 34px;
+  }
+}

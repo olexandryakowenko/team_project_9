@@ -1,0 +1,28 @@
+.slick {
+  background-color: #5e5e5e;
+}
+
+.slick-number {
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.box {
+  background-color: teal;
+  height: 200px;
+  padding: 50px;
+}
+
+.list {
+  list-style: none;
+}
+
+.slick-container {
+  width: 1200px;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+.slick-dots li.slick-active button:before {
+  color: red;
+}

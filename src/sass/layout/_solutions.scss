@@ -1,0 +1,23 @@
+.solutions {
+  & .container {
+    display: flex;
+    padding: 0;
+  }
+
+  &-content {
+    padding: 84px 44px 84px 30px;
+    background-color: var(--accent-color);
+  }
+
+  &-btn {
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    display: flex;
+    width: 167px;
+    height: 50px;
+    font-size: 18px;
+    line-height: 1.56;
+    align-items: center;
+    justify-content: center;
+  }
+}
