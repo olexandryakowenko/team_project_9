@@ -1,0 +1,109 @@
+@mixin centeredFlex($display: flex, $align: center, $justify: center) {
+    display: $display;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+@mixin transitionOne($type: color) {
+    transition: $type 250ms $timing-function;
+}
+
+@mixin transitionTwo($type: color, $type2: background-color) {
+    transition: $type 250ms $timing-function, $type2 250ms $timing-function;
+}
+
+@mixin transitionThree($type: color, $type2: background-color, $type3: box-shadow) {
+    transition: $type 250ms $timing-function, $type2 250ms $timing-function, $type3 250ms $timing-function;
+}
+
+@mixin container($padd-top: 0, $padd-btm: 0, $width: 100%) {
+  padding: 0 15px;
+  padding-top: $padd-top;
+  padding-bottom: $padd-btm;
+  width: $width;
+  // margin: 0 auto;
+  @media screen and (min-width: 480px){
+      width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+  @media screen and (min-width: 768px){
+      width: 768px;
+    }
+  
+  @media screen and (min-width: 1200px) {
+      width: 1200px;
+  }
+}
+
+@mixin fontPreset(
+  $font-weight: 400,
+  $font-size: 14px,
+  $line-height: 24px,
+  $letter-spacing: null)
+  {
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: lineHeight($font-size, $line-height);
+  letter-spacing: $letter-spacing;
+}
+
+
+@mixin buttonSet(
+    $display,
+    $min-width,
+    $min-height,
+    $padd-y,
+    $padd-x,
+    $bcg-color,
+    $color
+  ) {
+    display: $display;
+    align-items: center;
+    padding: $padd-y $padd-x;
+
+    min-width: $min-width;
+    min-height: $min-height;
+
+    font-family: inherit;
+    text-align: center;
+
+    border-radius: 4px;
+
+    background-color: $bcg-color;
+    color: $color;
+
+    cursor: pointer;
+  }
+
+@mixin logo($color: $title-text-color) {
+  @include fontPreset(700, 24px, 28px, 00.03em);
+
+  font-style: normal;
+  font-family: Montserrat, sans-serif;
+  color: $color;
+
+  @media screen and (min-width: 1200px){
+    @include fontPreset(700, 26px, 31px, 00.03em);
+  }
+}
+
+@mixin title() {
+  @include fontPreset(700, 28px, 33px, 0.03em);
+
+  color: $title-text-color;
+  margin-bottom: 30px;
+  text-align: center;
+
+  @media screen and (min-width:1200px) {
+    @include fontPreset(700, 36px, 42px, 0.03em);
+    margin-bottom: 50px;
+  }
+}
+
+@mixin flexWrap($gap: 30px) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $gap;
+}
