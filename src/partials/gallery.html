@@ -1,1 +1,33 @@
-<p>gallery</p>
+<!-- ========gallery======== -->
+<section class="section">
+  <div class="container">
+    <h2 class="hidden">gallery</h2>
+    <picture>
+      <source
+        srcset="
+          ./images/jpeg/desktop/gallery/gallery-1.jpg,
+          ./images/jpeg/desktop/gallery/gallery-1@2x.jpg
+        "
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="
+          ./images/jpeg/tablet/gallery/gallery-1.jpg,
+          ./images/jpeg/tablet/gallery/gallery-1@2x.jpg
+        "
+        media="(min-width: 768px)"
+      />
+      <img
+        srcset="
+          ./images/jpeg/mobile/gallery/gallery-1.jpg,
+          ./images/jpeg/mobile/gallery/gallery-1@2x.jpg
+        "
+        src="./images/jpeg/mobile/gallery/gallery-1.jpg"
+        width="1013"
+        height="422"
+        alt="image"
+        loading="lazy"
+      />
+    </picture>
+  </div>
+</section>
