@@ -1,5 +1,18 @@
 :root {
-  --accent-color: #28a745;
-  --primary-text-color: #333333;
-  --secondary-text-color: #ffffff;
+  --accent-color:#F8D24E;
+  --primary-text-color: #FCFCFC;
+  --secondary-text-color: #131313;
+  --additional-text-color: #ABABAB;
+  --background-color: #84A178;
+  --secondary-background-color: #EFD478;
+  --additional-background-color: #D6936D;
+  --button-text-color: #000000;
+  --button-hoover-focus-color: #0A8817;
+  --button-disabled-color: #ABABAB;
+  --modal-background-color: #FCFCFC;
+  --modal-form-color: rgba(248, 210, 78, 0.1);
+  --modal-ingredients-bgr-color: #9CBE8F; 
 }
+$mobile: 328px;
+$tablet: 768px;
+$desktop: 1200px;
