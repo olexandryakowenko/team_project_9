@@ -2,10 +2,7 @@
   .coment__foto {
     margin-bottom: 32px;
   }
-  //   .coment {
-  //     padding-right: 20px;
-  //     padding-left: 20px;
-  //   }
+
   .coment__field {
     padding: 34px 39px;
     background-color: var(--background-color);
@@ -28,5 +25,35 @@
     line-height: 1.85;
     color: var(--secondary-text-color);
     text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .coment__field {
+    padding: 28px 80px;
+    border-radius: 24px;
+    margin-bottom: 32px;
+  }
+  .coment__text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.86;
+  }
+  .coment__information {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.86;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .coment {
+    width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .coment__field {
+    padding: 73px 39px;
+  }
+  .coment__text {
+    line-height: 1.86;
   }
 }
