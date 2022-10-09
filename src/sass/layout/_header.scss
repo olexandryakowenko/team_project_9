@@ -10,7 +10,7 @@
 }
 
 .page-header {
-    background-color: #84A278;
+    background-color: var(--background-color);
     padding: 12px 0;
     &__container {
         display: flex;
@@ -21,7 +21,7 @@
 
 @media screen and (min-width: 768px) {
     .page-header {
-        background-color: #84A278;
+        background-color: var(--background-color);
         padding: 20px 0;
     }
 
@@ -60,14 +60,12 @@
     .nav__link {
     font-family: 'Montserrat';
     @include font(16px, 700, 20px);
-    color: #FCFCFC;
-    }
+    color: var(--primary-text-color);
 
-    .nav__link:hover,
-    .nav__link:focus {
-    color: #F8D24E;
+        &:hover, &:focus {
+                color: var(--accent-color);
+        }
     }
-    
 }
 
 

@@ -3,37 +3,35 @@
     @include font (14px, 600, 18px);
     padding: 12px 34px;
 
-    color: #131313;
-    background-color: #F8D24E;
+    color: var(--secondary-text-color);
+    background-color: var(--accent-color);
     border-radius: 10px;
     border-color: transparent;
+
+    &:hover {
+            background-color: var(--button-hoover-focus-color);
+    }
+
+    &:focus {
+        background-color: var(--button-hoover-focus-color);
+        color: var(--primary-text-color);
+        border: 2px solid var(--button-hoover-focus-color);
+        outline: none;
+    }
 }
 
-.button:hover {
-    background-color: #0A8817;
-}
-
-.button:focus {
-    background-color: #0A8817;
-    color: #FCFCFC;
-    border: 2px solid #0A8817;
-    outline: none;
-}
-
-.button-burger, .button-cross {
+.button-burger,.button-cross {
     line-height: 0;
     background-color: transparent;
     padding: 0;
     width: 32px;
     height: 32px;
-}
 
-.button-burger:hover, .button-cross:hover,
-.button-burger:focus,
-.button-cross:focus {
-    background-color: transparent;
-    border: none;
+    &:hover, &:focus {
+        background-color: transparent;
+        border: none;
 
+    }
 }
 
 .buy-now-button, .buy-now-button-mobile {
@@ -41,6 +39,6 @@
 }
 
 .buy-now-button-mobile:focus .icon-greater-than {
-    fill: #FCFCFC;
+    fill: var(--primary-text-color);
 
 }
