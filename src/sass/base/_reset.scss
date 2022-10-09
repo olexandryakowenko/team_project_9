@@ -34,6 +34,7 @@ ol {
 .link {
     text-decoration: none;
     color: inherit;
+    cursor: url(../images/cursor.svg), default;
 }
 
 img {
@@ -48,5 +49,10 @@ address {
 }
 
 button {
-    cursor: pointer;
+    border: none;
+    cursor: url(../images/cursor.svg), default;
+}
+
+body {
+    margin: 0;
 }
