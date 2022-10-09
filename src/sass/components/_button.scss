@@ -28,6 +28,14 @@
     height: 32px;
 }
 
+.button-burger:hover, .button-cross:hover,
+.button-burger:focus,
+.button-cross:focus {
+    background-color: transparent;
+    border: none;
+
+}
+
 .buy-now-button, .buy-now-button-mobile {
     width: 152px;
 }
