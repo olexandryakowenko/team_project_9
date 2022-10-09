@@ -14,6 +14,9 @@
         
 .footer-box__link {
     font-family: Montserrat;
+    text-transform: uppercase;
+    text-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+    width: 232px;
     font-weight: 700;
     font-size: 18px;
     line-height: 1.22;
@@ -23,6 +26,8 @@
 
 .footer-box__title {
     font-family: Montserrat;
+    text-transform: uppercase;
+    width: 200px;
     font-weight: 700;
     font-size: 34px;
     line-height: 1.21;
@@ -68,16 +73,61 @@
     }
 }
 
-.social-list__icon {
-    width: 18px;
-    height: 18px;
+.social-list-icon__github {
+    width: 20px;
+    height: 20px;
     fill: var(--background-color);
     transition: fill $timing-function;
 }
 
-.social-list__item:hover .social-list__icon,
-.social-list__item:focus .social-list__icon {
+.social-list-icon__telegram {
+    width: 20px;
+    height: 16px;
+    fill: var(--background-color);
+    transition: fill $timing-function;
+}
+
+.social-list-icon__facebook {
+    width: 9px;
+    height: 20px;
+    fill: var(--background-color);
+    transition: fill $timing-function;
+}
+
+.social-list__item:hover .social-list-icon__github {
     fill: #FFFFFF;
+    width: 19px;
+    height: 19px;
+}
+
+.social-list__item:focus .social-list-icon__github {
+    fill: #FFFFFF;
+    width: 21px;
+    height: 21px;
+}
+
+.social-list__item:hover .social-list-icon__telegram {
+    fill: #FFFFFF;
+    width: 19px;
+    height: 14px;
+}
+
+.social-list__item:focus .social-list-icon__telegram {
+    fill: #FFFFFF;
+    width: 21px;
+    height: 16px;
+}
+
+.social-list__item:hover .social-list-icon__facebook {
+    fill: #FFFFFF;
+    width: 9px;
+    height: 19px;
+}
+
+.social-list__item:focus .social-list-icon__facebook {
+    fill: #FFFFFF;
+    width: 10px;
+    height: 21px;
 }
 
 .footer-inform {
