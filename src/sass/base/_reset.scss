@@ -64,5 +64,9 @@ button {
 }
 
 body {
+    font-family: var(--main-font);
+    color: var(--primary-text-color);
+
+    font-size: 16px;
     margin: 0;
 }
