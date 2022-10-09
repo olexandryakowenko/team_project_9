@@ -8,12 +8,61 @@
             <a href="#"></a>How it's made?</button>  
      </div>
      <div class="hero__description">
-       <img src="#" alt="scoops of ice cream">
+        <picture>
+            <source srcset="
+            ./images/webp/desktop/header-hero/plate.webp 1x,
+            ./images/webp/desktop/header-hero/plate@2x.webp 2x"
+            media="(min-width: 1200px)"
+            type="image/webp">
+            <source srcset="
+            ./images/jpeg/desktop/header-hero/plate.png 1x, 
+            ./images/jpeg/desktop/header-hero/plate@2x.png 2x"
+            media="(min-width: 1200px)">
+            <source srcset="
+            ./images/webp/tablet/header-hero/plate.webp 1x, 
+            ./images/webp/tablet/header-hero/plate@2x.webp 2x"
+            media="(max-width:767)"
+            type="image/webp">
+            <source srcset="
+            ./images/jpeg/tablet/header-hero/plate.png 1x, 
+            ./images/jpeg/tablet/header-hero/plate@2x.png 2x"
+            media="(max-width:767px)">
+            <img src="./images/jpeg/desktop/header-hero/plate.png" alt="scoops of ice cream">
+        </picture>
         <p class="hero__description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p> 
      </div>
      <div class="hero__statistics">
-         <img src="#" alt="an ice cream cone">
-        <ul class="hero__stats">
+        <picture>
+            <source srcset="
+            ./images/webp/desktop/header-hero/ice-cream.webp 1x, 
+            ./images/webp/desktop/header-hero/ice-cream@2x.webp 2x"
+            media="(min-width: 1200px)"
+            type="image/webp">
+            <source srcset="
+            ./images/jpeg/desktop/header-hero/ice-cream.png 1x, 
+            ./images/jpeg/desktop/header-hero/ice-cream@2x.png 2x"
+            media="(min-width: 1200px)">
+            <source srcset="
+            ./images/webp/tablet/header-hero/ice-cream.webp 1x, 
+            ./images/webp/tablet/header-hero/ice-cream@2x.webp 2x"
+            media="(max-width:767)"
+            type="image/webp">
+            <source srcset="
+            ./images/jpeg/tablet/header-hero/ice-cream.png 1x, 
+            ./images/jpeg/tablet/header-hero/ice-cream@2x.png 2x"
+            media="(max-width:767px)">
+            <source srcset="
+            ./images/webp/mobile/header-hero/ice-cream.webp 1x, 
+            ./images/webp/mobile/header-hero/ice-cream@2x.webp 2x"
+            media="(min-width:768px)"
+            type="image/webp">
+            <source srcset="
+            ./images/jpeg/mobile/header-hero/ice-cream.png 1x, 
+            ./images/jpeg/mobile/header-hero/ice-cream@2x.png 2x"
+            media="(min-width:768px)">
+            <img src="./images/jpeg/mobile/header-hero/ice-cream.png" alt="an ice cream cone">
+        </picture>
+        <ul class="hero__stats list">
             <li class="hero__stats-cafes"><span>16</span> cafes</li>
             <li class="hero__stats-trucks"><span>23</span> food trucks</li>
         </ul>   
