@@ -5,7 +5,7 @@
   "homepage": "https://olexandryakowenko.github.io/team_project_9",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /fson-64-al-team/"
+    "build": "parcel build src/*.html --public-url /team_project_9/"
   },
   "repository": {
     "type": "git",
