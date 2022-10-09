@@ -1,1 +1,6 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+
+body {
+    background: url(/src/images/bg-icecream.jpg) repeat-y center center fixed;
+    background-size: cover;
+}
