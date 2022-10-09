@@ -101,8 +101,6 @@
   }
   .about__wrapper {
     display: flex;
-
-    width: 768px;
   }
 
   .about__image {
@@ -112,6 +110,7 @@
     margin-bottom: 0;
   }
   .about__text {
+    width: 50%;
     padding: 7px 32px 0 32px;
   }
   .about__text-first {
