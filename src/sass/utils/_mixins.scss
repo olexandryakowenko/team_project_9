@@ -1,4 +1,5 @@
 @mixin font($fs, $fw, $lh) {
+<<<<<<< HEAD
   font-size: $fs;
   font-weight: $fw;
   line-height: ($lh / $fs);
@@ -134,3 +135,9 @@
     @content;
   }
 }
+=======
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: calc($lh / $fs);
+}
+>>>>>>> ca9000a1f77c63c8fdbf8550b141423b83db2aee
