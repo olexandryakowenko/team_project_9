@@ -1,7 +1,7 @@
 @mixin font($fs, $fw, $lh) {
   font-size: $fs;
   font-weight: $fw;
-  line-height: $lh / $fs;
+  line-height: ($lh / $fs);
 }
 @mixin centeredFlex($display: flex, $align: center, $justify: center) {
   display: $display;
