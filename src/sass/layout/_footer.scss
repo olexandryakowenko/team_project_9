@@ -1,0 +1,128 @@
+.page-footer {
+    padding-top: 39px;
+    padding-bottom: 62px;
+    background-color: var(--background-color);
+    text-align: center;
+}
+
+.footer-base {
+    display: block;
+    justify-content: space-between;
+    align-items: baseline;
+
+}
+        
+.footer-box__link {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.22;
+    color: var(--primary-text-color);
+    text-align: left;
+}
+
+.footer-box__title {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 1.21;
+    color: var(--primary-text-color);
+    text-align: left;
+
+    padding-top: 16px;
+}
+
+.social {
+    border-bottom: 1px solid #E1E1E1;
+}
+
+.social-list {
+    display: flex;
+    justify-content: right;
+    column-gap: 28px;
+
+    padding-top: 42px;
+}
+
+.social-list__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 34px;
+    height: 34px;
+
+    border-radius: 50%;
+    fill: var(--background-color);
+    background-color: var(--accent-color);
+    transition: fill $timing-function;
+
+    &:hover {
+        width: 32px;
+        height: 32px;
+    }
+
+    &:focus {
+        width: 35px;
+        height: 35px;  
+    }
+}
+
+.social-list__icon {
+    width: 18px;
+    height: 18px;
+    fill: var(--background-color);
+    transition: fill $timing-function;
+}
+
+.social-list__item:hover .social-list__icon,
+.social-list__item:focus .social-list__icon {
+    fill: #FFFFFF;
+}
+
+.footer-inform {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: baseline;
+    padding-top: 38px;
+    padding-bottom: 40px;
+}
+
+.footer-contact {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.8;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+}
+
+.footer-telefon {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.8;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+}
+
+.footer-end {
+    display: flex;
+    width: 165px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.basement {
+    font-weight: 700;
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #7A7A7A;
+
+    padding-top: 16px;
+}
