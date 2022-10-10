@@ -10,7 +10,49 @@ ul {
   margin-left: auto;
   margin-right: auto;
 }
-
+.adresscard-btn__locations {
+  @include centeredFlex;
+  @include font(14px, 600, 18px);
+  text-align: center;
+  padding: 12px 30px;
+  color: var(--secondary-text-color);
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 10px;
+  @include transitionTwo;
+  &:hover {
+    background-color: var(--button-hoover-focus-color);
+  }
+  &:focus {
+    color: var(--primary-text-color);
+    background-color: var(--button-hoover-focus-color);
+  }
+  &:default {
+    background-color: var(--additional-text-color);
+  }
+}
+.adresscard-btn__franchise {
+  @include centeredFlex;
+  @include font(14px, 600, 18px);
+  text-align: center;
+  padding: 12px 45px;
+  color: var(--secondary-text-color);
+  background-color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+  border-radius: 10px;
+  background-color: var(--background-color);
+  @include transitionTwo;
+  &:hover {
+    border-color: var(--button-hoover-focus-color);
+  }
+  &:focus {
+    color: var(--primary-text-color);
+    border-color: var(--button-hoover-focus-color);
+  }
+  &:default {
+    border-color: var(--additional-text-color);
+  }
+}
 @media screen and (max-width: 767px) {
   .page-adresscard {
     padding-top: 48px;
@@ -21,19 +63,21 @@ ul {
     padding-left: 20px;
     padding-right: 20px;
   }
+
   .container-card {
     position: relative;
-    //   height: 1408px;
+    height: 1130px;
     display: flex;
     flex-direction: column;
     justify-content: end;
     padding-bottom: 39px;
     width: 280px;
-    // margin-left: auto;
-    // margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
   .container_contacts {
     position: absolute;
+    top: -345px;
   }
   .adresscard {
     border-radius: 24px;
@@ -43,7 +87,6 @@ ul {
     max-width: 320px;
     padding: 40px 32px;
     font-family: Montserrat;
-    // @include font(12px, 500, 22px);
     margin-left: auto;
     margin-right: auto;
 
@@ -100,6 +143,15 @@ ul {
     letter-spacing: 0.04em;
     color: var(--secondary-text-color);
   }
+  .adresscard-btn__locations {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8px;
+  }
+  .adresscard-btn__franchise {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 @media screen and (min-width: $tablet) {
   .page-adresscard {
@@ -113,17 +165,18 @@ ul {
   }
   .container-card {
     position: relative;
-    // height: 630px;
+    height: 350px;
     display: flex;
     flex-direction: column;
     justify-content: end;
     padding-bottom: 40px;
     width: 704px;
-    // margin-left: auto;
-    // margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
   .container_contacts {
     position: absolute;
+    top: -304px;
     display: flex;
     gap: 16px;
     margin-bottom: 60px;
@@ -203,13 +256,14 @@ ul {
   .container-card {
     position: relative;
     width: 1168px;
-    height: 538px;
+    height: 566px;
   }
   .container_contacts {
     position: absolute;
     display: flex;
     gap: 32px;
-    margin-bottom: 15px;
+    margin-bottom: 64px;
+    top: -96px;
   }
   .adresscard {
     padding: 40px;
