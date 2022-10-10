@@ -1,3 +1,11 @@
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -35,16 +43,62 @@
     max-width: 320px;
     padding: 40px 32px;
     font-family: Montserrat;
-    // font-weight: 500;
-    // font-size: 12px;
-    // line-height: 1, 83;
-    @include font(12px, 500, 22px);
+    // @include font(12px, 500, 22px);
     margin-left: auto;
     margin-right: auto;
 
     &:not(:last-child) {
       margin-bottom: 20px;
     }
+  }
+  .adresscard_title {
+    display: inline-block;
+    @include font(12px, 500, 22px);
+    letter-spacing: 0.04em;
+    text-align: center;
+    padding-left: 23px;
+    padding-right: 23px;
+    color: var(--secondary-text-color);
+    border: none;
+    border-radius: 4px;
+    background-color: var(--accent-color);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px 0px #00000040;
+  }
+  .adresscard_item {
+    &:not(:last-child) {
+      margin-bottom: 24px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid #e1e1e1;
+    }
+  }
+  .adresscard_list-title {
+    @include font(12px, 500, 22px);
+    letter-spacing: 0.04em;
+    color: var(--secondary-text-color);
+    margin-bottom: 8px;
+  }
+  .adresscard_list-adress {
+    @include font(12px, 500, 22px);
+    letter-spacing: 0.04em;
+    color: var(--additional-background-color);
+  }
+  .adresscard_list-schedule {
+    @include font(12px, 500, 22px);
+    letter-spacing: 0.04em;
+    color: var(--secondary-text-color);
+  }
+  .adresscard_list-hours {
+    @include font(12px, 500, 22px);
+    letter-spacing: 0.04em;
+    color: var(--button-disabled-color);
+  }
+  .adresscard_link {
+    @include font(12px, 500, 18px);
+    letter-spacing: 0.04em;
+    color: var(--secondary-text-color);
   }
 }
 @media screen and (min-width: $tablet) {
@@ -81,8 +135,59 @@
     width: 100%;
     padding: 40px 24px;
     font-family: Montserrat;
-    @include font(12px, 500, 22px);
-
+  }
+  .adresscard_title {
+    display: inline-block;
+    @include font(16px, 500, 30px);
+    letter-spacing: 0.04em;
+    text-align: center;
+    padding-left: 14px;
+    padding-right: 14px;
+    color: var(--secondary-text-color);
+    border: none;
+    border-radius: 6px;
+    background-color: var(--accent-color);
+    text-transform: uppercase;
+    margin-bottom: 32px;
+  }
+  .adresscard_item {
+    &:not(:last-child) {
+      margin-bottom: 32px;
+      padding-bottom: 26px;
+      border-bottom: 1px solid #e1e1e1;
+    }
+  }
+  .adresscard_list-title {
+    @include font(14px, 500, 26px);
+    letter-spacing: 0.04em;
+    color: var(--secondary-text-color);
+    margin-bottom: 12px;
+  }
+  .adresscard_list-adress {
+    @include font(14px, 500, 26px);
+    letter-spacing: 0.04em;
+    color: var(--additional-background-color);
+  }
+  .adresscard_list-schedule {
+    @include font(14px, 500, 26px);
+    letter-spacing: 0.04em;
+    color: var(--secondary-text-color);
+  }
+  .adresscard_list-hours {
+    @include font(14px, 500, 26px);
+    letter-spacing: 0.04em;
+    color: #907e82;
+  }
+  .adresscard_link {
+    @include font(14px, 500, 26px);
+    letter-spacing: 0.04em;
+    color: var(--secondary-text-color);
+  }
+  .adresscard-btn {
+    @include centeredFlex;
+    justify-items: baseline;
+    gap: 16px;
+  }
 }
 
 @media screen and (min-width: $desktop) {
@@ -104,6 +209,35 @@
     position: absolute;
     display: flex;
     gap: 32px;
-    // margin-bottom: 15px;
+    margin-bottom: 15px;
   }
+  .adresscard {
+    padding: 40px;
   }
+  .adresscard_item {
+    &:not(:last-child) {
+      padding-bottom: 32px;
+    }
+  }
+  .adresscard_list-title {
+    @include font(16px, 500, 30px);
+    letter-spacing: 0.04em;
+    margin-bottom: 8px;
+  }
+  .adresscard_list-adress {
+    @include font(16px, 500, 29px);
+  }
+  .adresscard_list-schedule {
+    @include font(16px, 500, 30px);
+  }
+  .adresscard_list-hours {
+    @include font(16px, 500, 30px);
+    color: var(--button-disabled-color);
+  }
+  .adresscard_link {
+    @include font(16px, 500, 29px);
+  }
+  .adresscard-btn {
+    gap: 16px;
+  }
+}
