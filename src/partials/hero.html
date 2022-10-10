@@ -31,8 +31,7 @@
         </picture>
         <p class="hero__description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p> 
      </div>
-     <div class="hero__statistics">
-        <picture>
+        <picture class="hero__picture">
             <source srcset="
             ./images/webp/desktop/header-hero/ice-cream.webp 1x, 
             ./images/webp/desktop/header-hero/ice-cream@2x.webp 2x"
@@ -62,10 +61,17 @@
             media="(min-width:768px)">
             <img src="./images/jpeg/mobile/header-hero/ice-cream.png" alt="an ice cream cone">
         </picture>
+        <div class="hero__statistics">
         <ul class="hero__stats list">
             <li class="hero__stats-cafes"><span>16</span> cafes</li>
             <li class="hero__stats-trucks"><span>23</span> food trucks</li>
-        </ul>   
+        </ul>  
      </div>
+     <svg 
+     lang="en"
+     aria-label="dots"
+     class="hero__dots-mobile">
+         <use class="hero__dots" href="./images/sprite.svg#icon-dots-mobile"></use>
+     </svg> 
     </div>
 </section>
