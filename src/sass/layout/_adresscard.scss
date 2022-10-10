@@ -1,0 +1,109 @@
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .page-adresscard {
+    padding-top: 48px;
+    padding-bottom: 38px;
+  }
+  .container {
+    max-width: 480px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .container-card {
+    position: relative;
+    //   height: 1408px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-bottom: 39px;
+    width: 280px;
+    // margin-left: auto;
+    // margin-right: auto;
+  }
+  .container_contacts {
+    position: absolute;
+  }
+  .adresscard {
+    border-radius: 24px;
+    background-color: var(--primary-text-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    max-width: 320px;
+    padding: 40px 32px;
+    font-family: Montserrat;
+    // font-weight: 500;
+    // font-size: 12px;
+    // line-height: 1, 83;
+    @include font(12px, 500, 22px);
+    margin-left: auto;
+    margin-right: auto;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}
+@media screen and (min-width: $tablet) {
+  .page-adresscard {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+  .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .container-card {
+    position: relative;
+    // height: 630px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-bottom: 40px;
+    width: 704px;
+    // margin-left: auto;
+    // margin-right: auto;
+  }
+  .container_contacts {
+    position: absolute;
+    display: flex;
+    gap: 16px;
+    margin-bottom: 60px;
+  }
+  .adresscard {
+    background-color: var(--primary-text-color);
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    width: 100%;
+    padding: 40px 24px;
+    font-family: Montserrat;
+    @include font(12px, 500, 22px);
+
+}
+
+@media screen and (min-width: $desktop) {
+  .page-adresscard {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+  .container {
+    max-width: 1200px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .container-card {
+    position: relative;
+    width: 1168px;
+    height: 538px;
+  }
+  .container_contacts {
+    position: absolute;
+    display: flex;
+    gap: 32px;
+    // margin-bottom: 15px;
+  }
+  }
