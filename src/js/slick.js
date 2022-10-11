@@ -1,4 +1,4 @@
-$('.one-time').slick({
+$('.slider-feedback').slick({
   dots: true,
   arrows: false,
   infinite: true,
