@@ -1,10 +1,12 @@
-<section class="section about">
-  <div class="container">
-    <div class="about">
-      <p class="about__label">tradition and love</p>
-      <h2 class="about__title">how it’s made?</h2>
-      <div class="about__wrapper">
-        <picture>
+<section class="about" id="about">
+    <div class="container">
+      <div class="about__title-wrapper">
+        <p class="about__title-label">tradition and love</p>
+        <h2 class="about__title">how it’s made?</h2>
+      </div>
+      <div class="about__picture">
+        <div class="about__image">
+          <picture class="about__image-cow about__image-cow-1">
           <source
             srcset="
               ./images/webp/desktop/about/cow.webp    1x,
@@ -53,10 +55,11 @@
           <img
             src="./images/jpeg/mobile/about/cow.jpg"
             alt="корова на галявині"
-            class="about__image"
+            class="about__image-cow-2"
           />
         </picture>
-        <div class="about__text">
+        </div>        
+        <div class="about__text-wrapper">
           <p class="about__text-first">
             Ice is a place where you will become not only a little happier, but
             also healthier. Health is the main value for us, and we follow it
@@ -71,12 +74,12 @@
           <p class="about__text-third">
             This is enough to choose ice cream and coffee for any mood!
           </p>
-          <a href="#" class="about__btn" data-menu-open>
+          <button type="button" class="about__btn">
             Read more
-            <svg class="about__send">
+            <svg class="btn-icon">
               <use href="#"></use>
             </svg>
-          </a>
+          </button>
         </div>
       </div>
     </div>
