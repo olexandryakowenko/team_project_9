@@ -5,6 +5,7 @@
     &__container {
         @include container();
         padding-bottom: 60px;
+        padding-top: 60px;
     }
     
     &__text {
@@ -45,8 +46,10 @@
 
         border-radius: 24px;
 
-        &:not(:last-child) {
-            margin-bottom: 164px;
+        @media screen and(max-width: 767px) {
+            &:not(:last-child) {
+                margin-bottom: 164px;
+            }
         }
 
         &-1 {
@@ -68,10 +71,15 @@
 
     flex-direction: column;
     text-align: center;
+    // justify-content: space-between;
+    align-items: center;
 
-    padding: 0 40px;
-    top: 125px;
-    bottom: 15px;
+    padding: 10px 40px;
+    position: relative;
+
+    height: 100%;
+    // top: 125px;
+    // bottom: 15px;
 
     &__title {
         @include fontPreset(700, 20px, 24px, 00.04em);
@@ -80,34 +88,44 @@
 
         margin-bottom: 40px;
 
+        @media screen and(max-width:767px) {
+            padding-top: 123px;
+        }
+
         &::before {
             content: "";
 
-            width: 200px;
-            height: 200px;
+            width: 200.33px;
+            height: 199.68px;
 
             border-radius: 50%;
 
-            display: block;
+            // align-items: center;
+            // padding: 0 40px;
 
+            // display: flex;
+            top: 0px;
+            left: 39px;
             position: absolute;
-            top: -100px;
-            left: 42px;
+
+            transform: translateY(-50%);
         }
 
         &::after {
             content: "";
 
-            width: 200px;
-            height: 200px;
+            width: 200.33px;
+            height: 199.68px;
 
             border-radius: 50%;
 
             display: block;
 
             position: absolute;
-            top: -112px;
-            left: calc(50% - 112px);
+            top: -11.32px;
+            left: 39px;
+
+            transform: translateY(-50%);
 
             background-repeat: no-repeat;
             background-size: cover;
@@ -189,8 +207,8 @@
 
         &-3 {
             &::before {
-                background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
-                box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+                background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+                box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);                
             }
 
             &::after {
@@ -227,5 +245,144 @@
 
     &__text {
         @include fontPreset(400, 14px, 25px, 00.04em);
+        // margin-bottom: 100px;
+    }
+
+    &__button {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+    }
+}
+
+.card-space {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media screen and(min-width: 768px) {
+    .products {
+        &__container {
+            padding-bottom: 80px;
+            padding-left: 32px;
+            padding-right: 32px;
+        }
+
+        &__text {
+            @include fontPreset(800, 22px, 27px, null);
+        }
+    
+        &__title {
+            @include fontPreset(400, 34px, 43px, 0.04em);
+
+            margin-bottom: 200px;
+        }
+
+        &__list {
+            @include flexWrap(16px);
+            justify-content: center;
+            flex-direction: row;
+        }
+    
+        &__item {
+            width: 224px;
+            height: 428px;
+
+            border-radius: 15.7808px;
+        }
+    }
+
+    .products-card {
+        @include centeredFlex($justify: null);
+    
+        padding: 10px 26px;
+        padding-top: 0;
+    
+        &__title {
+            @include fontPreset(700, 22px, 27px, 00.04em);
+
+            padding-top: 107px;
+    
+            &::before {
+                width: 199.34px;
+                height: 196.85px;
+
+                left: 12px;
+            }
+    
+            &::after {
+                width: 199.34px;
+                height: 196.85px;
+    
+                left: 12px;
+            }
+        }
+    }
+}
+
+@media screen and(min-width: 1200px) {
+    .products {
+        &__container {
+            padding-bottom: 66px;
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+
+        &__text {
+            @include fontPreset(800, 30px, 37px, null);
+        }
+    
+        &__title {
+            @include fontPreset(400, 36px, 45px, 0.06em);
+
+            margin-bottom: 303px;
+        }
+
+        &__list {
+            gap: 32px;
+        }
+    
+        &__item {
+            width: 370px;
+            height: 535px;
+
+            border-radius: 24px;
+        }
+    }
+
+    .products-card {
+        @include centeredFlex($justify: null);
+    
+        padding: 40px 62px;
+        padding-top: 0;
+    
+        &__title {
+            @include fontPreset(700, 30px, 37px, 00.04em);
+
+            padding-top: 166px;
+
+            margin-bottom: 65px;
+    
+            &::before {
+                width: 301.76px;
+                height: 300.29px;
+
+                left: 33px;
+            }
+    
+            &::after {
+                width: 301.76px;
+                height: 300.29px;
+
+                left: 33px;
+            }
+        }
+
+        &__text {
+            @include fontPreset(400, 16px, 28px, 00.04em);
+        }
     }
 }
