@@ -299,6 +299,7 @@
         @include centeredFlex($justify: null);
     
         padding: 10px 26px;
+        padding-top: 0;
     
         &__title {
             @include fontPreset(700, 22px, 27px, 00.04em);
@@ -306,8 +307,6 @@
             padding-top: 107px;
     
             &::before {
-                content: "";
-    
                 width: 199.34px;
                 height: 196.85px;
 
@@ -315,13 +314,75 @@
             }
     
             &::after {
-                content: "";
-    
                 width: 199.34px;
                 height: 196.85px;
     
                 left: 12px;
             }
+        }
+    }
+}
+
+@media screen and(min-width: 1200px) {
+    .products {
+        &__container {
+            padding-bottom: 66px;
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+
+        &__text {
+            @include fontPreset(800, 30px, 37px, null);
+        }
+    
+        &__title {
+            @include fontPreset(400, 36px, 45px, 0.06em);
+
+            margin-bottom: 303px;
+        }
+
+        &__list {
+            gap: 32px;
+        }
+    
+        &__item {
+            width: 370px;
+            height: 535px;
+
+            border-radius: 24px;
+        }
+    }
+
+    .products-card {
+        @include centeredFlex($justify: null);
+    
+        padding: 40px 62px;
+        padding-top: 0;
+    
+        &__title {
+            @include fontPreset(700, 30px, 37px, 00.04em);
+
+            padding-top: 166px;
+
+            margin-bottom: 65px;
+    
+            &::before {
+                width: 301.76px;
+                height: 300.29px;
+
+                left: 33px;
+            }
+    
+            &::after {
+                width: 301.76px;
+                height: 300.29px;
+
+                left: 33px;
+            }
+        }
+
+        &__text {
+            @include fontPreset(400, 16px, 28px, 00.04em);
         }
     }
 }
