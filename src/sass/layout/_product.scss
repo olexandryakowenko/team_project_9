@@ -46,8 +46,10 @@
 
         border-radius: 24px;
 
-        &:not(:last-child) {
-            margin-bottom: 164px;
+        @media screen and(max-width: 767px) {
+            &:not(:last-child) {
+                margin-bottom: 164px;
+            }
         }
 
         &-1 {
@@ -72,7 +74,7 @@
     // justify-content: space-between;
     align-items: center;
 
-    padding: 0 40px;
+    padding: 10px 40px;
     position: relative;
 
     height: 100%;
@@ -98,11 +100,10 @@
 
             border-radius: 50%;
 
-            align-items: center;
-            margin-bottom: 20px;
-            padding: 0 40px;
+            // align-items: center;
+            // padding: 0 40px;
 
-            display: flex;
+            // display: flex;
             top: 0px;
             left: 39px;
             position: absolute;
@@ -262,6 +263,65 @@
     justify-content: space-between;
 }
 
-// @media screen and(min-width: 768px) {
+@media screen and(min-width: 768px) {
+    .products {
+        &__container {
+            padding-bottom: 80px;
+            padding-left: 32px;
+            padding-right: 32px;
+        }
 
-// }
+        &__text {
+            @include fontPreset(800, 22px, 27px, null);
+        }
+    
+        &__title {
+            @include fontPreset(400, 34px, 43px, 0.04em);
+
+            margin-bottom: 200px;
+        }
+
+        &__list {
+            @include flexWrap(16px);
+            justify-content: center;
+            flex-direction: row;
+        }
+    
+        &__item {
+            width: 224px;
+            height: 428px;
+
+            border-radius: 15.7808px;
+        }
+    }
+
+    .products-card {
+        @include centeredFlex($justify: null);
+    
+        padding: 10px 26px;
+    
+        &__title {
+            @include fontPreset(700, 22px, 27px, 00.04em);
+
+            padding-top: 107px;
+    
+            &::before {
+                content: "";
+    
+                width: 199.34px;
+                height: 196.85px;
+
+                left: 12px;
+            }
+    
+            &::after {
+                content: "";
+    
+                width: 199.34px;
+                height: 196.85px;
+    
+                left: 12px;
+            }
+        }
+    }
+}
