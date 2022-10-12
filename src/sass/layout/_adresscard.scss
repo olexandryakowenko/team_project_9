@@ -2,6 +2,9 @@
   margin-left: auto;
   margin-right: auto;
 }
+.page-adresscard {
+  background-color: var(--background-color);
+}
 .adresscard-btn__locations {
   @include centeredFlex;
   @include font(14px, 600, 18px);
@@ -46,10 +49,6 @@
   }
 }
 @media screen and (max-width: 767px) {
-  .page-adresscard {
-    padding-top: 48px;
-    padding-bottom: 38px;
-  }
   .container {
     max-width: 480px;
     padding-left: 20px;
@@ -146,10 +145,6 @@
   }
 }
 @media screen and (min-width: $tablet) {
-  .page-adresscard {
-    padding-top: 80px;
-    padding-bottom: 40px;
-  }
   .container {
     max-width: 768px;
     padding-left: 32px;
@@ -236,9 +231,6 @@
 }
 
 @media screen and (min-width: $desktop) {
-  .page-adresscard {
-    background-color: var(--background-color);
-  }
   .container {
     max-width: 1200px;
     padding-left: 16px;
@@ -254,7 +246,7 @@
     display: flex;
     gap: 32px;
     margin-bottom: 64px;
-    top: -30%;
+    top: -18%;
   }
   .adresscard {
     padding: 40px;
