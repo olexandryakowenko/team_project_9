@@ -21,13 +21,13 @@ if (iconMenu) {
     document.body.classList.toggle('lock');
     iconMenu.classList.toggle('active');
     menuNav.classList.toggle('is-open');
-  })
+  });
 }
 
 // Scroll to
-const menuLinks = document.querySelectorAll('menu__link[data-goto]');
+const menuLinks = document.querySelectorAll('.menu__link[data-goto]');
 if (menuLinks.length > 0) {
-  menuLinks.forEach(element => {
+  menuLinks.forEach(menuLink => {
     menuLink.addEventListener("click", onMenuLinkClick);
   });
 
@@ -37,7 +37,7 @@ if (menuLinks.length > 0) {
       const gotoBlock = document.querySelector(menuLink.dataset.goto);
       const gotoBlockValue = gotoBlock.getBoundingClientRect().top + scrollY - document.querySelector('header').offsetHeight;
 
-      if (iconMenu.classList.contains('is-open')) {
+      if (iconMenu.classList.contains('active')) {
         document.body.classList.remove('lock');
         iconMenu.classList.remove('active');
         menuNav.classList.remove('is-open');

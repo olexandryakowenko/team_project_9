@@ -1,125 +1,15 @@
-@media screen and (max-width: 1199px) {
-    .menu {
-    display: none;
-    }
-
-    .buy-now-button {
-        display: none;
-    }
-
+body.lock {
+    overflow: hidden;
 }
 
 .page-header {
     background-color: var(--background-color);
-    padding: 12px 0;
+
     &__container {
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
-}
-
-@media screen and (min-width: 768px) {
-    .page-header {
-        background-color: var(--background-color);
-        padding: 20px 0;
-    }
-
-    .logo-link {
-        margin-right: auto;
-    }
-
-    .button-burger {
-        margin-right: 32px;
-    }
-    
-    .buy-now-button {
-        display: block;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .button-burger {
-        display: none;
-    }
-
-    .logo-link {
-        width: 60px;
-        height: 65px;
-        margin: 0;
-    }
-
-    .menu__list {
-    display: flex;
-    }
-
-    .menu__item:not(:last-child) {
-    margin-right: 27px;
-    }
-
-    .menu__link {
-    font-family: 'Montserrat';
-    @include font(16px, 700, 20px);
-    color: var(--primary-text-color);
-
-        &:hover, &:focus {
-                color: var(--accent-color);
-        }
-    }
-}
-
-
-
-// new menu 
-
-body.lock {
-    overflow: hidden;
-}
-
-.nav.is-open {
-    right: 0;
-}
-
-@media screen and (max-width: 1199px) {
-.page-header {
-    width: 100%;
-    z-index: 10;
-    min-height: 64px;
-    background-color: red;
-    padding: 12px 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-}
-
- .logo-link {
-    width: 40px;
-    height: 37px;
-    z-index: 5;
-    margin: 0;
-    position: relative;
-}
-}
-
-.nav {
-    width: 100%;
-    height: 100%;
-    background-color: var(--background-color);
-    transition: right .3s;
-    position: fixed;
-    top: 64px;
-    right: -100%;
-    overflow: auto;
-}
-
-.nav {
-    text-align: center;
-    margin-bottom: 111px;
-}
-
-.nav__list {
-    padding-top: 39px;
-    padding-bottom: 111px;
 }
 
 .menu-button {
@@ -134,48 +24,201 @@ body.lock {
     height: 12px;
     display: block;
     position: relative;
+
+    &::before, &::after {
+        content: "";
+    }
+   
+    &::before, &::after, & >span {
+        height: 10%;
+        width: 100%;
+        background-color: #fff;
+        transition: all .3s;
+        position: absolute;
+        left: 0;
+    }
+
+    &>span {
+        top: 50%;
+        transform: scale(1)translate(0, -50%);
+    }
+    
+    &::before {
+        top: 0;
+    }
+
+    &::after {
+        bottom: 0;
+    }
+
+    &.active span {
+        transform: scale(0) translate(0px, -50%);
+    }
+
+    &.active::before {
+        top: 50%;
+        transform: rotate(45deg) translate(0px, -50%);
+    }
+
+    &.active::after {
+        bottom: 50%;
+        transform: rotate(-45deg) translate(0px, 50%);
+    }
 }
 
-.menu-icon:before {
-    top: 0;
+.menu.is-open {
+    right: 0;
 }
 
-.menu-icon:before,
-.menu-icon:after {
-    content: "";
+.buy-now-button-tablet {
+    display: none;
 }
 
-.menu-icon span,
-.menu-icon:before,
-.menu-icon:after {
-    height: 10%;
-    width: 100%;
-    background-color: #fff;
-    transition: all .3s;
-    position: absolute;
-    left: 0;
+.button-wrapper {
+    display: flex;
+    justify-content: center;
 }
 
-.menu-icon span {
-    top: 50%;
-    transform: scale(1)translate(0, -50%);
+@media screen and (max-width: 1199px) {
+    .menu {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        top: 84px;
+        background-color: var(--background-color);
+        transition: right .3s;
+        position: fixed;
+        right: -100%;
+        overflow: auto;
+
+        &__list {
+            padding-top: 56px;
+            padding-bottom: 528px;
+        }
+
+        &__link:hover,
+        &__link:focus {
+            color: var(--secondary-text-color);
+        }
+    }
+
+    .page-header {
+        background-color: var(--background-color);
+        width: 100%;
+        z-index: 10;
+        min-height: 84px;
+        padding: 20px 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .logo-link {
+        width: 48px;
+        height: 44px;
+        z-index: 5;
+        margin-right: auto;
+        position: relative;
+    }
 }
 
-.menu-icon:after {
-    bottom: 0;
+
+@media screen and (max-width: 767px) {
+    .page-header {
+        min-height: 61px;
+        padding: 12px 0;
+    }
+
+    .logo-link {
+        width: 40px;
+        height: 37px;
+    }
+
+    .menu {
+        top: 61px;
+
+        &__list {
+            padding-top: 39px;
+            padding-bottom: 111px;
+        }
+
+        &__item:not(:last-child) {
+            margin-bottom: 32px;
+        }
+
+        &__link {
+            font-family: 'Montserrat';
+            @include font(32px, 700, 39px);
+            color: var(--primary-text-color);
+        }
+    }
 }
 
-.menu-icon.active span {
-    transform: scale(0) translate(0px, -50%);
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .buy-now-button-tablet {
+        display: flex;
+        margin-left: 32px;
+    }
+
+    .buy-now-button {
+        display: none;
+    }
+
+    .menu__item:not(:last-child) {
+        margin-bottom: 40px;
+    }
+
+    .menu__link {
+        @include font(48px, 700, 59px);
+    }
 }
 
-.menu-icon.active::before {
-    top: 50%;
-    transform: rotate(-45deg) translate(0px, -50%);
+@media screen and (min-width: 1200px) {
+    .page-header {
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+        min-height: 81px;
+        padding: 8px 0;
+    }
 
-}
-.menu-icon.active::after {
-    bottom: 50%;
-    transform: rotate(45deg) translate(0px, 50%);
+    .logo-link {
+        width: 60px;
+        height: 65px;
+        margin: 0;
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+
+        &__list {
+            display: flex;
+            margin-right: 247px;
+        }
+
+        &__item:not(:last-child) {
+            margin-right: 27px;
+        }
+
+        &__link {
+            font-family: 'Montserrat';
+            @include font(16px, 700, 20px);
+            color: var(--primary-text-color);
+        
+            &:hover,
+            &:focus {
+                color: var(--accent-color);
+            }
+        }
+    }
+
+    .buy-now-button {
+        display: flex;
+    }
+
+    .menu-button {
+        display: none;
+    }
 
 }
