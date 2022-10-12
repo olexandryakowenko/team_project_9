@@ -1,5 +1,6 @@
 .page-footer {
     display: block;
+    width: 100%;
     padding-top: 39px;
     padding-bottom: 62px;
     background-color: var(--background-color);
@@ -30,7 +31,6 @@
 @media screen and (min-width: 768px) {
     .footer-base {
         display: flex;
-        justify-content: space-around;
         align-items: flex-end;
     }
 }
@@ -43,7 +43,7 @@
 }
 
 .footer-box__link {
-    font-family: Montserrat;
+    font-family: var(--main-font);
     text-transform: uppercase;
     text-shadow: 0 4px 4px rgb(0 0 0 / 25%);
     width: 232px;
@@ -73,7 +73,7 @@
 }
 
 .footer-box__title {
-    font-family: Montserrat;
+    font-family: var(--main-font);
     text-transform: uppercase;
     width: 200px;
     font-weight: 700;
@@ -108,15 +108,16 @@
 .social {
     padding: 0;
 
-
     &-list {
         display: flex;
         justify-content: right;
-        gap: 28px;
+        align-items: baseline;
+       
+        gap: 30px;
 
-        &__link {
-            cursor: url(../images/cursor.svg), default;
-        }
+            &__link {
+                cursor: url(../images/cursor.svg), default;
+            }
     }
 }
 
@@ -181,7 +182,7 @@
 .social-list__item:hover .social-list-icon__telegram {
     fill: #FFFFFF;
     width: 19px;
-    height: 14px;
+    height: 15px;
 }
 
 .social-list__item:focus .social-list-icon__telegram {
@@ -226,7 +227,7 @@
 }
 
 .footer-contact {
-    font-family: Montserrat;
+    font-family: var(--main-font);
     font-weight: 700;
     font-size: 12px;
     line-height: 1.8;
@@ -250,7 +251,7 @@
 
 
 .footer-telefon {
-    font-family: Montserrat;
+    font-family: var(--main-font);
     font-weight: 500;
     font-size: 12px;
     line-height: 1.8;
@@ -287,7 +288,7 @@
 }
 
 .basement {
-    font-family: Montserrat;
+    font-family: var(--main-font);
     font-weight: 700;
     font-size: 14px;
     line-height: 1.5;
