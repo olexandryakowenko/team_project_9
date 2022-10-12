@@ -75,27 +75,6 @@
     gap: 8px;
     margin-bottom: 20px;
 
-    font-family: 'Montserrat';
-    font-style: normal;
-    width: 62px;
-    height: 24px;
-    font-weight: 600;
-    font-size: 8px;
-    line-height: 1.25;
-    padding: 10px;
-    
-
-    color: var(--button-text-color);
-    background-color: var(--background-color);
-
-    @media screen and (min-width: 1200px) {
-      width: 134px;
-      height: 42px;
-      font-size: 14px;
-      line-height: 1.29;
-      padding: 12px 34px;
-    }
-
   @media screen and (min-width: 768px) {
     margin-bottom: 28px;
   }
@@ -123,6 +102,14 @@
 
   color: var(--button-text-color);
   background-color: var(--background-color);
+
+  @media screen and (min-width: 1200px) {
+    width: 134px;
+    height: 42px;
+    font-size: 14px;
+    line-height: 1.29;
+    padding: 12px 34px;
+  }
 }
 .hero__primary-button:hover {
   border-color: var(--button-hoover-focus-color);
@@ -146,15 +133,15 @@
   border: none;
   cursor: pointer;
 
-    color: var(--accent-color);
-    background-color: var(--background-color);
+  color: var(--accent-color);
+  background-color: var(--background-color);
 
-    @media screen and (min-width: 1200px) {
-      width: 154px;
-      height: 42px;
-      font-size: 14px;
-      line-height: 1.22;
-    }
+  @media screen and (min-width: 1200px) {
+    width: 154px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 1.22;
+  }
 }
 
 .hero__secondary-button:hover {
@@ -247,6 +234,7 @@
 
   @media screen and (min-width: 1200px) {
     width: 225px;
+    height: 225px;
   }
 }
 .hero-description-box {
@@ -260,6 +248,7 @@
   @media screen and (min-width: 1200px) {
     gap: 25px;
     padding-top: 32px;
+    width: 200px;
   }
 }
 .hero__description-text {
