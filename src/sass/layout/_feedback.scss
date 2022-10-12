@@ -1,4 +1,8 @@
 @media screen and (min-width: 320px), screen and (max-width: 480px) {
+  .section-feedback {
+    padding-bottom: 380px;
+    padding-top: 80px;
+  }
   .slider-feedback {
     margin-bottom: 14px;
   }
@@ -41,6 +45,10 @@
   }
 }
 @media screen and (min-width: 768px) {
+  .section-feedback {
+    padding-top: 0px;
+    padding-bottom: 320px;
+  }
   .slider-feedback {
     margin-bottom: 32px;
   }
@@ -62,13 +70,16 @@
     // margin-bottom: 32px;
   }
   .slick-dots {
-    width: 738px;
+    width: 704px;
   }
   .slick-dotted.slick-slider {
     margin-bottom: 32px;
   }
 }
 @media screen and (min-width: 1200px) {
+  .section-feedback {
+    padding-bottom: 112px;
+  }
   .coment {
     width: 968px;
     margin-left: auto;
