@@ -1,18 +1,5 @@
-// (() => {
-//   const refs = {
-//     openMenuBtn: document.querySelector('[data-menu-open]'),
-//     closeMenuBtn: document.querySelector('[data-menu-close]'),
-//     menu: document.querySelector('[data-menu]'),
-//   };
-  
-//   refs.openMenuBtn.addEventListener('click', toggleModal);
-//   refs.closeMenuBtn.addEventListener('click', toggleModal);
-//   function toggleModal() {
-//     refs.menu.classList.toggle('is-open');
-//   }
-// })();
 
-// menu-burger
+// меню бургер
 
 const iconMenu = document.querySelector('.menu-icon');
 const menuNav = document.querySelector('.menu');
@@ -24,7 +11,7 @@ if (iconMenu) {
   });
 }
 
-// Scroll to
+// Скрол до розділів
 const menuLinks = document.querySelectorAll('.menu__link[data-goto]');
 if (menuLinks.length > 0) {
   menuLinks.forEach(menuLink => {
