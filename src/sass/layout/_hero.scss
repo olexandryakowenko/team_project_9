@@ -71,9 +71,30 @@
   }
 }
 .hero__buttons {
-  display: flex;
-  gap: 8px;
-  margin-bottom: 20px;
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    width: 62px;
+    height: 24px;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 1.25;
+    padding: 10px;
+    
+
+    color: var(--button-text-color);
+    background-color: var(--background-color);
+
+    @media screen and (min-width: 1200px) {
+      width: 134px;
+      height: 42px;
+      font-size: 14px;
+      line-height: 1.29;
+      padding: 12px 34px;
+    }
 
   @media screen and (min-width: 768px) {
     margin-bottom: 28px;
@@ -98,6 +119,7 @@
   font-weight: 600;
   font-size: 8px;
   line-height: 1.25;
+  padding: 10px;
 
   color: var(--button-text-color);
   background-color: var(--background-color);
@@ -124,8 +146,15 @@
   border: none;
   cursor: pointer;
 
-  color: var(--accent-color);
-  background-color: var(--background-color);
+    color: var(--accent-color);
+    background-color: var(--background-color);
+
+    @media screen and (min-width: 1200px) {
+      width: 154px;
+      height: 42px;
+      font-size: 14px;
+      line-height: 1.22;
+    }
 }
 
 .hero__secondary-button:hover {
@@ -155,7 +184,54 @@
 }
 .hero__description {
   display: none;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        gap: 33px;
+        align-items: center;
+    @media screen and (min-width: 1200px) {
+          gap: 14px;
+        }
+    }
+}
+.hero__description-image{
+    width: 152px;
+    height: 152px;
 
+    @media screen and (min-width: 1200px) {
+        width: 250px;
+        height: 250px;
+      }
+}
+.hero-description-box{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 151px;
+    align-items: flex-start;
+    justify-content: center;
+   
+    @media screen and (min-width: 1200px) {
+        gap: 25px;
+        padding-top: 32px;
+        width: 200px;
+      }
+}
+.hero__description-text{
+    width: 151px;
+    font-size: 12px;
+    line-height: 1.4;
+    font-style: normal;
+    font-weight: 400;
+    color: var(--primary-text-color);
+    
+    @media screen and (min-width: 1200px) {
+        width: 200px;
+        font-size: 14px;
+      }
+}
+.hero__link{
+    display: flex;
+    justify-content: start;
   @media screen and (min-width: 768px) {
     display: flex;
     gap: 33px;
@@ -229,8 +305,16 @@
   @media screen and (min-width: 1200px) {
     right: 16px;
     gap: 16px;
+    }
+    }
+
+.sales-spots__number{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 28px;
   }
-}
+
 .sales-spots__number {
   font-weight: 900;
   font-size: 28px;
