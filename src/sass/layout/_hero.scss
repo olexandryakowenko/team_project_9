@@ -99,10 +99,19 @@
     font-weight: 600;
     font-size: 8px;
     line-height: 1.25;
+    padding: 10px;
     
 
     color: var(--button-text-color);
     background-color: var(--background-color);
+
+    @media screen and (min-width: 1200px) {
+      width: 134px;
+      height: 42px;
+      font-size: 14px;
+      line-height: 1.29;
+      padding: 12px 34px;
+    }
 }
 .hero__primary-button:hover{
     border-color: var(--button-hoover-focus-color);
@@ -128,6 +137,13 @@
 
     color: var(--accent-color);
     background-color: var(--background-color);
+
+    @media screen and (min-width: 1200px) {
+      width: 154px;
+      height: 42px;
+      font-size: 14px;
+      line-height: 1.22;
+    }
 }
 
 .hero__secondary-button:hover{
@@ -172,7 +188,8 @@
     height: 152px;
 
     @media screen and (min-width: 1200px) {
-        width: 225px;
+        width: 250px;
+        height: 250px;
       }
 }
 .hero-description-box{
@@ -186,6 +203,7 @@
     @media screen and (min-width: 1200px) {
         gap: 25px;
         padding-top: 32px;
+        width: 200px;
       }
 }
 .hero__description-text{
@@ -234,6 +252,8 @@
     }
     }
 .sales-spots__number{
+    font-family: 'Montserrat';
+    font-style: normal;
     font-weight: 900;
     font-size: 28px;
     line-height: 1.21;
