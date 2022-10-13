@@ -10,9 +10,11 @@
     background-color: var(--accent-color);
     border-radius: 10px;
     border-color: transparent;
+    transition: 500ms ease-in-out;
 
     &:hover {
         background-color: var(--button-hoover-focus-color);
+        transition: background-color 500ms ease-in-out;
     }
 
     &:focus {

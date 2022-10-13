@@ -3,7 +3,7 @@ body.lock {
 }
 
 .page-header {
-    background-color: var(--background-color);
+    background-color: rgba(132, 161, 120, 0.8);
 
     &__container {
         display: flex;
@@ -99,11 +99,12 @@ body.lock {
         &__link:hover,
         &__link:focus {
             color: var(--secondary-text-color);
+            transition: color 250ms ease-in-out;
         }
     }
 
     .page-header {
-        background-color: var(--background-color);
+        background-color: rgba(132, 161, 120, 0.8);
         width: 100%;
         z-index: 10;
         min-height: 84px;
@@ -150,6 +151,7 @@ body.lock {
             font-family: 'Montserrat';
             @include font(32px, 700, 39px);
             color: var(--primary-text-color);
+            transition: 250ms ease-in-out;
         }
     }
 }
@@ -170,6 +172,7 @@ body.lock {
 
     .menu__link {
         @include font(48px, 700, 59px);
+        transition: 250ms ease-in-out;
     }
 }
 
@@ -205,10 +208,12 @@ body.lock {
             font-family: 'Montserrat';
             @include font(16px, 700, 20px);
             color: var(--primary-text-color);
+            transition: 250ms ease-in-out;
         
             &:hover,
             &:focus {
                 color: var(--accent-color);
+                transition: color 250ms ease-in-out;
             }
         }
     }
