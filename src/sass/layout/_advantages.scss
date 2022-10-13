@@ -48,15 +48,29 @@
     }
 
     &__cow::before {
+
         background-image: url(/src/images/jpeg/advantages/cow.png);
+
+        @media (min-device-pixel-ratio:2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: url(/src/images/jpeg/advantages/cow@2x.png);
+            }
     }
 
     &__weight::before {
         background-image: url(/src/images/jpeg/advantages/weight.png);
+
+        @media (min-device-pixel-ratio:2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: url(/src/images/jpeg/advantages/weight@2x.png);
+            }
     }
 
     &__ice-crema::before {
+
         background-image: url(/src/images/jpeg/advantages/ice-cream.png);
+
+        @media (min-device-pixel-ratio:2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: url(/src/images/jpeg/advantages/ice-cream@2x.png);
+            }
     }
 
     background-color: var(--background-color);
