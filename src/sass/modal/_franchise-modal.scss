@@ -11,7 +11,7 @@
     background-color: #FCFCFC;
 
 
-    /* transform: translate(-50%, -50%) scale(1);
+/* transform: translate(-50%, -50%) scale(1);
     transition: transform var($timing-function);
 
 
@@ -74,7 +74,6 @@
 @media screen and (min-width: 768px) {
     .modal-form__title {
         width: 322px;
-        height: 84px;
         font-size: 20px;
         line-height: 1.4;
 
@@ -133,9 +132,8 @@
     padding-left: 12px;
     margin-bottom: 12px;
 }
-/* transition: transform var($timing-function) var($timing-function);
-   transform: translateY( -50%);
-*/
+/*transition: transform var($timing-function) var($timing-function);
+   transform: translateY( -50%);*/
 
 .modal-form__message {
     resize: none;
