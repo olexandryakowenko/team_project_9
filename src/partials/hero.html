@@ -1,12 +1,10 @@
 <section class="hero__section hero">
     <div class="hero__container container">
-     <h1 class="hero__title">Ice cream <br />made with<br />
+     <h1 class="hero__title">Ice cream <br/>made with<br/>
         <span class="hero__span">passion</span></h1>
-     <div class="hero__buttons">
-      <button type="button" class="hero__primary-button">
-            <a href="#"></a>Products</button>
-        <button type="button" class="hero__secondary-button">
-            <a href="#"></a>How it's made?</button>  
+     <div class="hero-buttons">
+      <button type="button" class="hero-primary-button" id="product">Products</button>
+        <button type="button" class="hero-secondary-button" id="about">How it's made?</button>  
         <ul class="sales-spots list">
             <li class="sales-spots__item">
                 <p class="sales-spots__number">16</p>
@@ -18,8 +16,8 @@
             </li>
         </ul>  
      </div>
-     <div class="hero__description">
-        <picture class="hero__description-image">
+     <div class="hero-description">
+        <picture class="hero-description__image">
             <source srcset="
             ./images/jpeg/desktop/header-hero/plate.png 1x, 
             ./images/jpeg/desktop/header-hero/plate@2x.png 2x"
@@ -35,16 +33,16 @@
             media="(max-width:1119px)">
             <img src="./images/jpeg/desktop/header-hero/plate.png" alt="scoops of ice cream">
         </picture>
-        <div class="hero-description-box">
-          <p class="hero__description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p> 
-          <a class="hero__link" href="#">
+        <div class="hero-description__box">
+          <p class="hero-description__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p> 
+          <a class="hero__link" href="#gallery">
           <svg class="hero__icon">
-            <use href="./images/sprite.svg#icon-arrow"></use>
+            <use class="hero__icon-svg" href="./images/sprite.svg#icon-arrow"></use>
           </svg> 
         </a> 
         </div>
      </div>
-     <picture class="hero__image">
+     <picture class="hero-image">
         <source srcset="
         ./images/jpeg/desktop/header-hero/big-ice-cream-desk.png 1x, 
         ./images/jpeg/desktop/header-hero/big-ice-cream-desk@2x.png 2x"
