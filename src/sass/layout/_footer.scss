@@ -16,7 +16,7 @@
 
 @media screen and (min-width: 1200px) {
     .page-footer {
-        padding-top: 120px;
+        padding-top: 80px;
         padding-bottom: 11px;
     }
 }
@@ -38,7 +38,14 @@
 @media screen and (min-width: 1200px) {
     .footer-base {
         width: 1200px;
-        align-items: baseline;
+    }
+}
+
+.footer-box {
+    align-self: baseline;
+
+    @media screen and(max-width:767px) {
+        margin-bottom: 42px;
     }
 }
 
@@ -83,7 +90,6 @@
     text-align: left;
 
     padding-top: 16px;
-    padding-bottom: 42px;
 }
 
 @media screen and (min-width: 768px) {
@@ -106,123 +112,82 @@
 }
 
 .social {
+
     padding: 0;
 
-    &-list {
-        display: flex;
-        justify-content: right;
-        align-items: baseline;
-       
-        gap: 30px;
+    display: flex;
+    flex-direction: column;
 
-            &__link {
-                cursor: url(../images/cursor.svg), default;
+    &-list {
+        justify-content: end;
+        gap: 28px;
+        display: flex;
+
+        @media screen and(min-width:768px){
+            gap: 30px;
+        }
+
+        &__link {
+            cursor: url(../images/cursor.svg), default;
+            @include transitionOne(fiil);
+
+            width: 32px;
+            height: 32px;
+            outline: 2px solid var(--accent-color);
+            color:var(--background-color);
+            background-color: var(--accent-color);
+            border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+
+            &:hover {
+                color: #fcfcfc;
+
+                outline: 1px solid transparent;
             }
+
+
+            &:focus {
+                color: #fcfcfc;
+
+                outline: 3px solid var(--accent-color);
+            }
+        }
     }
 }
 
 
 .social-list__item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 34px;
-    height: 34px;
-
-    border-radius: 50%;
-    border: 1px solid var(--accent-color);
     fill: var(--background-color);
-    background-color: var(--accent-color);
-    transition: fill $timing-function;
-
-    &:hover {
-        width: 32px;
-        height: 32px;
-    }
-
-    &:focus {
-        width: 35px;
-        height: 35px;
-    }
 }
 
-.social-list-icon__github {
+.social-list-icon {
     width: 20px;
     height: 20px;
-    fill: var(--background-color);
-    transition: fill $timing-function;
+    fill: currentColor;
 }
 
-.social-list-icon__telegram {
-    width: 20px;
-    height: 16px;
-    fill: var(--background-color);
-    transition: fill $timing-function;
-}
-
-.social-list-icon__facebook {
-    width: 9px;
-    height: 20px;
-    fill: var(--background-color);
-    transition: fill $timing-function;
-}
-
-.social-list__item:hover .social-list-icon__github {
-    fill: #FFFFFF;
-    width: 19px;
-    height: 19px;
-}
-
-.social-list__item:focus .social-list-icon__github {
-    fill: #FFFFFF;
-    width: 21px;
-    height: 21px;
-}
-
-.social-list__item:hover .social-list-icon__telegram {
-    fill: #FFFFFF;
-    width: 19px;
-    height: 15px;
-}
-
-.social-list__item:focus .social-list-icon__telegram {
-    fill: #FFFFFF;
-    width: 21px;
-    height: 16px;
-}
-
-.social-list__item:hover .social-list-icon__facebook {
-    fill: #FFFFFF;
-    width: 9px;
-    height: 19px;
-}
-
-.social-list__item:focus .social-list-icon__facebook {
-    fill: #FFFFFF;
-    width: 10px;
-    height: 21px;
-}
 
 .footer-inform {
     display: flex;
     flex-direction: row;
     justify-content: right;
     align-items: baseline;
-    padding-top: 38px;
+    margin-top: 38px;
     padding-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
     .footer-inform {
-        padding-top: 32px;
+        margin-top: 32px;
         padding-bottom: 56px;
     }
 }
 
 @media screen and (min-width: 1200px) {
     .footer-inform {
-        padding-top: 40px;
+        margin-top: 40px;
         padding-bottom: 60px;
     }
 }
