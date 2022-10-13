@@ -1,4 +1,31 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    opacity: 1;
+
+    transition: opacity 250ms , visibility 250ms;
+
+    &.is-hidden {
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+
+        .modal {
+            transform: scale(0);
+        }
+
+    }
+}
+
 .modal {
+    transform: translate(-50%, -50%);
+
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -7,24 +34,15 @@
     width: 280px;
     padding: 28px;
     border-radius: 10px;
-    border: 2px solid #F8D24E;
-    background-color: #FCFCFC;
-
-
-    /* transform: translate(-50%, -50%) scale(1);
-    transition: transform var($timing-function);
-
-   .backdrop.is-hidden & {
-        transform: translate(-50%, -50%) scale(0);
-    }*/
+    border: 2px solid var(--accent-color);
+    background-color: var(--primary-text-color);
 
     @media screen and (min-width: 768px) {
-            min-width: 568px;
-            max-width: 600px;
-            padding: 32px 60px;
+        min-width: 568px;
+        max-width: 600px;
+        padding: 32px 60px;
     }
 }
-
 
 .modal-close-btn {
     position: absolute;
@@ -38,6 +56,22 @@
     padding: 0;
     background-color: #FCFCFC;
     fill: #131313;
+}
+
+.modal-close__icon {
+    width: 16px;
+    height: 16px;
+    scale: (1);
+
+    @media screen and(min-width: $tablet) {
+        width: 20px;
+        height: 20px;
+    }
+
+    &:focus,
+    &:hover {
+        scale: (1.5);
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -103,6 +137,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-bottom: 16px;
 }
 
 .modal-form__input {
@@ -113,6 +148,10 @@
     border: 1px solid var(--background-color);
     border-radius: 10px;
     padding-left: 12px;
+}
+
+input::placeholder {
+    color: var(--secondary-text-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -177,4 +216,14 @@
         width: 121px;
 
     }
+}
+
+@media screen and (max-width: 767px) {
+    input::placeholder {
+            font-size: 12px;
+    }
+
+    .modal-form__wrapper {
+    margin-bottom: 12px;
+}
 }
