@@ -1,11 +1,11 @@
 .advantages {
     background: var(--background-color);
     width: 100%;
-    max-width: 480px;
+    min-width: 480px;
     height: 480;
 
     @include tablet {
-        max-width: 768px;
+        min-width: 768px;
     }
 
     @include desktop {
@@ -121,3 +121,4 @@
 
   } 
 
+  
