@@ -274,6 +274,7 @@
       animation-duration: 5s;
       animation-timing-function: linear;
       animation-iteration-count: infinite;
+      animation-direction: reverse;
     
       @media screen and (min-width: 1200px) {
         width: 225px;
