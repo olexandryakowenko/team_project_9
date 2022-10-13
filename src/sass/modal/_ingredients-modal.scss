@@ -17,6 +17,8 @@
     border: 2px solid var(--accent-color);
     border-radius: 10px;
 
+    overflow-y: scroll;
+
     transform: translate(-50%, -50%) scale(1);
 
     background-color: #fff;

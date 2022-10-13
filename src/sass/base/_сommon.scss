@@ -3,4 +3,11 @@
 body {
     background: url(/src/images/bg-icecream.jpg) repeat-y center center fixed;
     background-size: cover;
+
+    overflow: auto;
+    overflow-x: hidden;
 }
+
+body.modal-open {
+    overflow: hidden;
+  }
