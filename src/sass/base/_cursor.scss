@@ -1,3 +1,16 @@
 body {
     cursor: url(../images/cursor.svg), default;
 }
+
+.button:hover, .hero-primary-button:hover, .hero-secondary-button:hover, .about__btn:hover, .adresscard-btn__locations:hover, .adresscard-btn__franchise:hover {
+    cursor: url(../images/ghost-cursor.svg), pointer;
+}
+
+.icon-greater-than {
+    transition: transform 400ms linear 25ms;
+}
+
+.button:hover .icon-greater-than, .about__btn:hover .icon-greater-than, .adresscard-btn__locations:hover .icon-greater-than, .adresscard-btn__franchise:hover .icon-greater-than {
+    transform: rotate(450deg);
+    transition: transform 400ms linear 25ms;
+}
