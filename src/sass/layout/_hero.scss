@@ -109,6 +109,7 @@
   &__icon {
     width: 40px;
     height: 20px;
+    cursor: url(../images/cursor.svg), default;
     fill: var(--primary-text-color);
   }
 }
@@ -142,6 +143,7 @@
   border: 2px solid var(--accent-color);
   border-radius: 8px;
   cursor: pointer;
+  cursor: url(../images/cursor.svg), default;
 
   @include font(8px, 600, 10px);
   font-family: var(--main-font);
@@ -183,6 +185,7 @@
   height: 24px;
   border: none;
   cursor: pointer;
+  cursor: url(../images/cursor.svg), default;
 
   color: var(--accent-color);
   background-color: var(--background-color);
@@ -274,6 +277,7 @@
       animation-duration: 5s;
       animation-timing-function: linear;
       animation-iteration-count: infinite;
+      animation-direction: reverse;
     
       @media screen and (min-width: 1200px) {
         width: 225px;
