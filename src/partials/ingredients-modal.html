@@ -181,7 +181,9 @@
           alt="Chocolate ice-coffee"
         />
       </picture>
-      <span class="modal-ingredients__picture-span--coffee"></span>
+      <span
+        class="modal-ingredients__picture-span modal-ingredients__picture-span--coffee"
+      ></span>
     </div>
 
     <ul class="calories__list">
@@ -262,6 +264,139 @@
       <label class="ingredients-form__label">
         <textarea
           class="ingredients-form__textarea ingredients-form__textarea--coffee ingredients-form__textarea-comm"
+          name="comment"
+          rows="3"
+          placeholder="Comment"
+        ></textarea>
+      </label>
+
+      <button class="modal-ingredients__button-submit" type="submit">
+        Submit
+      </button>
+    </form>
+  </div>
+</div>
+
+<!-- Modal-ingredients milkshake-->
+<div class="backdrop-ingredients is-hidden" data-modal-milkshake>
+  <button
+    class="modal-ingredients__button modal-ingredients__button-close"
+    data-modal-milkshake-close
+  >
+    <svg class="modal-ingredients__icon" width="11.11" height="11.14">
+      <use href="./images/sprite.svg#icon-cross"></use>
+    </svg>
+  </button>
+
+  <div class="modal-ingredients modal-ingredients-icecream">
+    <h2 class="modal-ingredients__title">Chololate Milkshake</h2>
+
+    <div class="modal-ingredients__picture">
+      <picture>
+        <source
+          srcset="
+            ./images/webp/mobile/ingredients-modal/milkshake.webp    1x,
+            ./images/webp/mobile/ingredients-modal/milkshake@2x.webp 2x
+          "
+          media="(min-width: 320px)"
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/jpeg/mobile/ingredients-modal/milkshake.jpg    1x,
+            ./images/jpeg/mobile/ingredients-modal/milkshake@2x.jpg 2x
+          "
+          media="(min-width: 320px)"
+        />
+        <img
+          class="modal-ingredients__img"
+          src="./images/jpeg/mobile/ingredients-modal/milkshake.jpg"
+          alt="Chocolate milkshake"
+        />
+      </picture>
+      <span
+        class="modal-ingredients__picture-span modal-ingredients__picture-span--milkshake"
+      ></span>
+    </div>
+
+    <ul class="calories__list">
+      <li class="calories__item calories__item--milkshake">
+        <div class="calories__circle calories__circle--milkshake">
+          <p class="calories__value">320</p>
+        </div>
+        <p class="calories__name">kcal</p>
+      </li>
+      <li class="calories__item calories__item--milkshake">
+        <div class="calories__circle calories__circle--milkshake">
+          <p class="calories__value">4g</p>
+        </div>
+        <p class="calories__name">Prote...</p>
+      </li>
+      <li class="calories__item calories__item--milkshake">
+        <div class="calories__circle calories__circle--milkshake">
+          <p class="calories__value">8,2g</p>
+        </div>
+        <p class="calories__name">Fats</p>
+      </li>
+      <li class="calories__item calories__item--milkshake">
+        <div class="calories__circle calories__circle--milkshake">
+          <p class="calories__value">40,4g</p>
+        </div>
+        <p class="calories__name">Carbs</p>
+      </li>
+    </ul>
+
+    <p class="modal-ingredients__ingredients">Ingredients</p>
+
+    <ul class="ingredients__list">
+      <li class="ingredients__item">
+        <div class="ingredients__name">Milk</div>
+        <div class="ingredients__value">100ml</div>
+      </li>
+      <li class="ingredients__item">
+        <div class="ingredients__name">Belgian chocolate</div>
+        <div class="ingredients__value">20g</div>
+      </li>
+      <li class="ingredients__item">
+        <div class="ingredients__name">Cream</div>
+        <div class="ingredients__value">150 ml</div>
+      </li>
+      <li class="ingredients__item">
+        <div class="ingredients__name">Cocoa powder</div>
+        <div class="ingredients__value">30g</div>
+      </li>
+      <li class="ingredients__item">
+        <div class="ingredients__name">Sugar</div>
+        <div class="ingredients__value">40g</div>
+      </li>
+      <li class="ingredients__item">
+        <div class="ingredients__name">Vanilla sugar</div>
+        <div class="ingredients__value">10g</div>
+      </li>
+    </ul>
+
+    <form class="ingredients-form js-speaker-form">
+      <label class="ingredients-form__label">
+        <input
+          class="ingredients-form__textarea ingredients-form__textarea--milkshake"
+          type="text"
+          name="name"
+          placeholder="Name"
+        />
+      </label>
+
+      <label class="ingredients-form__label">
+        <input
+          class="ingredients-form__textarea ingredients-form__textarea--milkshake"
+          type="tel"
+          name="tel"
+          placeholder="Phone"
+        />
+      </label>
+
+      <label class="ingredients-form__label">
+        <textarea
+          class="ingredients-form__textarea ingredients-form__textarea--milkshake ingredients-form__textarea-comm"
           name="comment"
           rows="3"
           placeholder="Comment"
