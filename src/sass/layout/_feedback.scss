@@ -1,3 +1,4 @@
+
 @media screen and (min-width: 320px), screen and (max-width: 480px) {
   .section-feedback {
     padding-bottom: 394px;
@@ -8,6 +9,10 @@
   }
   .coment__foto {
     margin-bottom: 32px;
+    border-radius: 50%;
+  }
+  .coment{
+    height: 436px;
   }
 
   .coment__field {
@@ -51,6 +56,9 @@
   }
   .slider-feedback {
     margin-bottom: 32px;
+  }
+  .coment{
+    height: 325px;
   }
   .coment__field {
     padding: 28px 80px;
