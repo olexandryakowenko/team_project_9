@@ -188,6 +188,12 @@
 
         margin: 4px auto;
         margin-top: 20px;
+
+        &:hover,
+        &:focus {
+            background-color: #0A8817;
+            color: black;
+        }
     }
 }
 
