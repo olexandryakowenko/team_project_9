@@ -34,12 +34,12 @@
 
   &__section {
     padding-top: 61px;
-  
-    @media screen and (min-width: 767px){
+
+    @media screen and (min-width: 767px) {
       padding-top: 84px;
     }
-  
-    @media screen and (min-width: 1200px){
+
+    @media screen and (min-width: 1200px) {
       padding-top: 81px;
     }
   }
@@ -50,8 +50,7 @@
     letter-spacing: 0.04em;
     width: 100%;
     margin-bottom: 32px;
-    
-  
+
     text-transform: uppercase;
     color: var(--primary-text-color);
 
@@ -62,7 +61,7 @@
     animation-timing-function: ease-out;
     transition-property: opacity;
     animation-fill-mode: backwards;
-  
+
     @media screen and (min-width: 768px) {
       margin-bottom: 20px;
       @include font(18px, 400, 23px);
@@ -76,7 +75,7 @@
 
   &__span {
     @include font(34px, 400, 33px);
-  
+
     @media screen and (min-width: 768px) {
       @include font(24px, 400, 13px);
     }
@@ -96,15 +95,15 @@
     padding: 0;
     line-height: 0;
     animation: pulse 5s infinite;
-    
+
     @media screen and (min-width: 768px) {
-    display: flex;
-    gap: 33px;
-    align-items: center;
-    @media screen and (min-width: 1200px) {
-      gap: 14px;
+      display: flex;
+      gap: 33px;
+      align-items: center;
+      @media screen and (min-width: 1200px) {
+        gap: 14px;
+      }
     }
-  }
   }
   &__icon {
     width: 40px;
@@ -124,9 +123,9 @@
 }
 
 .hero-buttons {
-    display: flex;
-    gap: 8px;
-    margin-bottom: 20px;
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 28px;
@@ -153,17 +152,17 @@
 
   color: var(--button-text-color);
   background-color: var(--background-color);
-  
+
   transition: border-color $timing-function, color $timing-function;
-  
-    &:hover {
+
+  &:hover {
     border-color: var(--button-hoover-focus-color);
   }
-    &:focus {
+  &:focus {
     border-color: var(--button-hoover-focus-color);
     color: var(--primary-text-color);
   }
-    &:default {
+  &:default {
     border-color: var(--additional-text-color);
   }
   @media screen and (min-width: 1200px) {
@@ -191,18 +190,19 @@
   background-color: var(--background-color);
   transition: color $timing-function;
 
-    &:hover {
-      color: var(--button-hoover-focus-color);
-    }
-    &:focus {
-      color: var(--primary-text-color);
-    }
-    &:default {
-      color: var(--additional-text-color);
-    }
-    
-    @media screen and (min-width: 1200px) {
+  &:hover {
+    color: var(--button-hoover-focus-color);
+  }
+  &:focus {
+    color: var(--primary-text-color);
+  }
+  &:default {
+    color: var(--additional-text-color);
+  }
+
+  @media screen and (min-width: 1200px) {
     @include font(14px, 600, 17px);
+    display: flex;
     width: 154px;
     height: 40px;
   }
@@ -228,62 +228,62 @@
 }
 .hero-description {
   display: none;
-    @media screen and (min-width: 768px) {
-        display: flex;
-        gap: 33px;
-        align-items: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 33px;
+    align-items: center;
     @media screen and (min-width: 1200px) {
-          gap: 14px;
-        }
+      gap: 14px;
     }
-    &__image{
-      width: 152px;
-      height: 152px;
-  
-      @media screen and (min-width: 1200px) {
-          width: 250px;
-          height: 250px;
-        }
   }
-    &__box{
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      width: 151px;
-      align-items: flex-start;
-      justify-content: center;
-    
-      @media screen and (min-width: 1200px) {
-          gap: 25px;
-          padding-top: 32px;
-          width: 200px;
-        }
-       }
-    &__text{
-      @include font(12px, 400, 17px);
-      font-family: var(--main-font);
-      width: 151px;
-      color: var(--primary-text-color);
-          
-      @media screen and (min-width: 1200px) {
+  &__image {
+    width: 152px;
+    height: 152px;
+
+    @media screen and (min-width: 1200px) {
+      width: 250px;
+      height: 250px;
+    }
+  }
+  &__box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 151px;
+    align-items: flex-start;
+    justify-content: center;
+
+    @media screen and (min-width: 1200px) {
+      gap: 25px;
+      padding-top: 32px;
+      width: 200px;
+    }
+  }
+  &__text {
+    @include font(12px, 400, 17px);
+    font-family: var(--main-font);
+    width: 151px;
+    color: var(--primary-text-color);
+
+    @media screen and (min-width: 1200px) {
       width: 200px;
       font-size: 14px;
-      }
     }
-    &__image {
-      width: 152px;
-      height: 152px;
-      animation-name: spin;
-      animation-duration: 5s;
-      animation-timing-function: linear;
-      animation-iteration-count: infinite;
-      animation-direction: reverse;
-    
-      @media screen and (min-width: 1200px) {
-        width: 225px;
-        height: 225px;
-      }
+  }
+  &__image {
+    width: 152px;
+    height: 152px;
+    animation-name: spin;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+
+    @media screen and (min-width: 1200px) {
+      width: 225px;
+      height: 225px;
     }
+  }
 }
 
 @keyframes spin {
@@ -311,8 +311,8 @@
   @media screen and (min-width: 1200px) {
     right: 16px;
     gap: 16px;
-    }
-    &__number {
+  }
+  &__number {
     @include font(28px, 900, 34px);
     font-family: var(--main-font);
     text-align: right;
@@ -320,22 +320,23 @@
     text-transform: uppercase;
     color: var(--button-text-color);
     animation: wiggle 2s linear infinite;
-  @media screen and (min-width: 1200px) {
-    @include font(46px, 900, 56px);
-      }
-    }
-    &__name {
-      @include font(8px, 400, 10px);
-      text-align: right;
-      color: var(--primary-text-color);
     @media screen and (min-width: 1200px) {
-      @include font(14px, 400, 17px); 
-      }
+      @include font(46px, 900, 56px);
     }
+  }
+  &__name {
+    @include font(8px, 400, 10px);
+    text-align: right;
+    color: var(--primary-text-color);
+    @media screen and (min-width: 1200px) {
+      @include font(14px, 400, 17px);
     }
+  }
+}
 
 @keyframes wiggle {
-  0%, 7% {
+  0%,
+  7% {
     transform: rotateZ(0);
   }
   15% {
@@ -353,9 +354,8 @@
   35% {
     transform: rotateZ(-4deg);
   }
-  40%, 100% {
+  40%,
+  100% {
     transform: rotateZ(0);
   }
 }
-
-
