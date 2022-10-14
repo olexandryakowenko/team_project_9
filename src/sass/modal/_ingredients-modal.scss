@@ -90,6 +90,31 @@
         position: absolute;
         top: 12px;
         right: 12px;
+
+        &:hover .modal-ingredients__icon, 
+        &:focus .modal-ingredients__icon{
+            scale: 1.5;
+        }
+
+        &:hover .modal-ingredients__icon-1, 
+        &:focus .modal-ingredients__icon-1{
+            fill: #475E3F;
+        }
+
+        &:hover .modal-ingredients__icon-2, 
+        &:focus .modal-ingredients__icon-2{
+            fill: #887228;
+        }
+
+        &:hover .modal-ingredients__icon-3, 
+        &:focus .modal-ingredients__icon-3{
+            fill: #744022;
+        }
+    }
+
+    &__icon {
+        fill: currentColor;
+        scale: 1;
     }
 
     &__title {
@@ -163,6 +188,12 @@
 
         margin: 4px auto;
         margin-top: 20px;
+
+        &:hover,
+        &:focus {
+            background-color: #0A8817;
+            color: black;
+        }
     }
 }
 
@@ -317,3 +348,8 @@
         }
     }
 }
+
+// picture {
+//     animation: flip;
+//     animation-duration: 10s;
+// }
