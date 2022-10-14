@@ -252,6 +252,33 @@
         background-color: transparent;
         border: none;
         padding: 0;
+
+        cursor: pointer;
+
+        &:hover .products-card__icon,
+        &:focus .products-card__icon{
+            scale: 1.2;
+        }
+
+        &:hover .products-card__icon-1,
+        &:focus .products-card__icon-1{
+            fill: #475E3F;
+        }
+
+        &:hover .products-card__icon-2,
+        &:focus .products-card__icon-2{
+            fill: #887228;
+        }
+
+        &:hover .products-card__icon-3,
+        &:focus .products-card__icon-3{
+            fill: #744022;
+        }
+    }
+
+    &__icon {
+        fill: currentColor;
+        scale: 1;
     }
 }
 
