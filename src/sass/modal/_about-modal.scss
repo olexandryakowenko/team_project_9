@@ -44,6 +44,10 @@
   width: 9px;
   height: 9px;
   fill: var(--secondary-text-color);
+  scale: 1;
+  &:hover {
+    scale: 1.5;
+  }
 }
 .mobile-menu-read__title {
   font-family: 'Seymour One';
