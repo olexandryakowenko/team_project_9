@@ -95,6 +95,7 @@
     padding: 0;
     line-height: 0;
     // animation: pulse 5s infinite;
+<<<<<<< HEAD
 
     @media screen and (min-width: 768px) {
       display: flex;
@@ -110,6 +111,22 @@
       @media screen and (min-width: 1200px) {
         gap: 14px;
       }
+=======
+    
+    @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 33px;
+    align-items: center;
+
+    &:hover .hero__icon,
+    &:focus .hero__icon{
+        // scale: 1.2;
+        fill: black;
+    }
+
+    @media screen and (min-width: 1200px) {
+      gap: 14px;
+>>>>>>> 6e3fd28987d9ed56f580b36fb688c29a5d2a31ca
     }
   }
   &__icon {
