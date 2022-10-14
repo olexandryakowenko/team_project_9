@@ -16,6 +16,10 @@ body.lock {
     width: 32px;
     height: 32px;
     padding: 10px 6px;
+
+    &:hover .menu-icon>span,  &:hover .menu-icon::before, &:hover .menu-icon::after{
+        background-color: black;
+    }
 }
 
 .menu-icon {
@@ -24,6 +28,7 @@ body.lock {
     height: 12px;
     display: block;
     position: relative;
+    cursor: pointer;
 
     &::before, &::after {
         content: "";
@@ -36,6 +41,7 @@ body.lock {
         transition: all .3s;
         position: absolute;
         left: 0;
+
     }
 
     &>span {
@@ -120,6 +126,7 @@ body.lock {
         z-index: 5;
         margin-right: auto;
         position: relative;
+        cursor: pointer;
     }
 }
 
