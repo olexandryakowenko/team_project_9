@@ -1,39 +1,74 @@
 <!-- header -->
 <header class="page-header">
-    <div class="container page-header__container">
-        <a href="./index.html" class="logo-link link">
-            <picture>
-                <source srcset="./images/jpeg/desktop/header-hero/logo.png 1x, ./images/jpeg/desktop/header-hero/logo@2x.png 2x" media="(min-width: 1200px)" />
-                <source srcset="./images/jpeg/tablet/header-hero/logo.png 1x, ./images/jpeg/tablet/header-hero/logo@2x.png 2x"
-                    media="(min-width: 768px)" />
-                <source srcset="./images/jpeg/mobile/header-hero/logo@2x.png 2x"
-                    media="(max-width: 767px)" />
-                <img src="./images/jpeg/mobile/header-hero/logo.png " alt="logo" class="logo">
-            </picture>
-        </a>
-            <nav class="menu">
-                <ul class="list menu__list">
-                    <li class="menu__item"><a data-goto=".hero" href="#" class="menu__link link">Home</a></li>
-                    <li class="menu__item"><a data-goto=".about" href="#" class="menu__link link">How it’s made?</a></li>
-                    <li class="menu__item"><a data-goto=".products" href="#" class="menu__link link">Our products</a></li>
-                    <li class="menu__item"><a data-goto=".contacts" href="#" class="menu__link link">Contact</a></li>
-                </ul>
-                <div class="button-wrapper">
-                    <button type="button" class="buy-now-button button">Buy now<svg class="icon-greater-than" width="12px" height="12px">
-                            <use href="./images/sprite.svg#icon-greater-than"></use>
-                        </svg>
-                    </button>
-                </div>
-            </nav>
-            <div class="menu-button">
-                <div class="menu-icon">
-                    <span></span>
-                </div>
-            </div>
-        <button type="button" class="buy-now-button-tablet button">Buy now
-            <svg class="icon-greater-than" width="12px" height="12px">
-                <use href="./images/sprite.svg#icon-greater-than"></use>
-            </svg>
+  <div class="container page-header__container">
+    <a href="./index.html" class="logo-link link">
+      <picture>
+        <source
+          srcset="
+            ./images/jpeg/desktop/header-hero/logo.png    1x,
+            ./images/jpeg/desktop/header-hero/logo@2x.png 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            ./images/jpeg/tablet/header-hero/logo.png    1x,
+            ./images/jpeg/tablet/header-hero/logo@2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="./images/jpeg/mobile/header-hero/logo@2x.png 2x"
+          media="(max-width: 767px)"
+        />
+        <img
+          src="./images/jpeg/mobile/header-hero/logo.png "
+          alt="logo"
+          class="logo"
+        />
+      </picture>
+    </a>
+    <nav class="menu">
+      <ul class="list menu__list">
+        <li class="menu__item">
+          <a data-goto=".hero" href="#" class="menu__link link">Home</a>
+        </li>
+        <li class="menu__item">
+          <a data-goto=".about" href="#" class="menu__link link"
+            >How it’s made?</a
+          >
+        </li>
+        <li class="menu__item">
+          <a data-goto=".products" href="#" class="menu__link link"
+            >Our products</a
+          >
+        </li>
+        <li class="menu__item">
+          <a data-goto=".contacts" href="#" class="menu__link link">Contact</a>
+        </li>
+      </ul>
+      <div class="button-wrapper">
+        <button type="button" class="buy-now-button button" data-modal-buy-open>
+          Buy now<svg class="icon-greater-than" width="12px" height="12px">
+            <use href="./images/sprite.svg#icon-greater-than"></use>
+          </svg>
         </button>
+      </div>
+    </nav>
+    <div class="menu-button">
+      <div class="menu-icon">
+        <span></span>
+      </div>
     </div>
+    <button
+      type="button"
+      class="buy-now-button-tablet button"
+      data-modal-buy-open
+    >
+      Buy now
+      <svg class="icon-greater-than" width="12px" height="12px">
+        <use href="./images/sprite.svg#icon-greater-than"></use>
+      </svg>
+    </button>
+  </div>
 </header>
