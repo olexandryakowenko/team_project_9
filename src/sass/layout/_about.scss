@@ -110,6 +110,7 @@
   display: none;
 }
 .about__btn {
+  @include transitionTwo(color, background-color);
   border-radius: 10px;
   border: none;
   padding: 12px 34px;
@@ -120,6 +121,12 @@
   line-height: 18px;
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
+
+  &:hover,
+  &:focus {
+    color: black;
+    background-color: #0A8817;
+  }
 }
 
 .btn-icon {
