@@ -277,3 +277,12 @@
         padding-top: 12px;
     }
 }
+
+.telefon.link {
+    @include transitionOne();
+    cursor: pointer;
+    &:hover,
+    &:focus {
+        color: #0a8817;
+    }
+}
