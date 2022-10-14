@@ -1,0 +1,173 @@
+<div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-button" data-modal-close>
+          <svg class="modal-close-icon">
+            <use href="./images/sprite.svg#modal-icon_close"></use>
+          </svg>
+        </button>
+
+        <p class="modal-buy-now__caption">Buy now</p>
+
+        <ul class="ice-cream-list">
+          <li class="list-item">
+            <div class="modal-circle-green">
+              <div class="modal-square-green">
+                <p class="modal-item-text">ice cream</p>
+                <div class="position-img">
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/modal-img/desktop/png/ice_cream.png    1x,
+                        ./img/modal-img/desktop/png/ice_cream@2x.png 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/modal-img/desktop/webp/ice_cream.webp    1x,
+                        ./img/modal-img/desktop/webp/ice_cream@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="img/webp"
+                    />
+                    <source
+                      srcset="
+                        ./img/modal-img/mob/png/ice_cream.png    1x,
+                        ./img/modal-img/mob/png/ice_cream@2x.png 2x
+                      "
+                    />
+                    <source
+                      srcset="
+                        ./img/modal-img/mob/webp/ice_cream.webp    1x,
+                        ./img/modal-img/mob/webp/ice_cream@2x.webp 2x
+                      "
+                      type="img/webp"
+                    />
+                    <img src="./img/ice_cream.png" alt="ice-cream" />
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="list-item">
+            <div class="modal-circle-yellow">
+              <div class="modal-square-yellow">
+                <p class="modal-item-text">ice coffee</p>
+                <div class="position-img">
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/modal-img/desktop/png/ice_coffee.png    1x,
+                        ./img/modal-img/desktop/png/ice_coffee@2x.png 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/modal-img/desktop/webp/ice_coffee.webp    1x,
+                        ./img/modal-img/desktop/webp/ice_coffee@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="img/webp"
+                    />
+                    <source
+                      srcset="
+                        ./img/modal-img/mob/png/ice_coffee.png    1x,
+                        ./img/modal-img/mob/png/ice_coffee@2x.png 2x
+                      "
+                    />
+                    <source
+                      srcset="
+                        ./img/modal-img/mob/webp/ice_coffee.webp    1x,
+                        ./img/modal-img/mob/webp/ice_coffee@2x.webp 2x
+                      "
+                      type="img/webp"
+                    />
+                    <img src="./img/ice_coffee.png" alt="ice-coffee" />
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="list-item">
+            <div class="modal-circle-brown">
+              <div class="modal-square-brown">
+                <p class="modal-item-text">milkshake</p>
+                <div class="position-img">
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/modal-img/desktop/png/milkshake.png    1x,
+                        ./img/modal-img/desktop/png/milkshake@2x.png 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/modal-img/desktop/webp/milkshake.webp    1x,
+                        ./img/modal-img/desktop/webp/milkshake@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="img/webp"
+                    />
+                    <source
+                      srcset="
+                        ./img/modal-img/mob/png/milkshake.png    1x,
+                        ./img/modal-img/mob/png/milkshake@2x.png 2x
+                      "
+                    />
+                    <source
+                      srcset="
+                        ./img/modal-img/mob/webp/milkshake.webp    1x,
+                        ./img/modal-img/mob/webp/milkshake@2x.webp 2x
+                      "
+                      type="img/webp"
+                    />
+                    <img src="./img/milkshake.png" alt="milkshake" />
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <form class="modal-form">
+          <label class="modal-form-field">
+            <input
+              type="text"
+              class="modal-form-input"
+              required
+              pattern="[a-zA-Zа-яА-ЯіІїЇ'`]+"
+              name="user_name"
+              placeholder="Name"
+            />
+          </label>
+
+          <label class="modal-form-field">
+            <input
+              type="tel"
+              class="modal-form-input"
+              required
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+              title="xxx-xxx-xx-xx"
+              name="user_phone"
+              placeholder="Phone"
+            />
+          </label>
+
+          <label class="modal-form-field-message">
+            <textarea
+              name="user_message"
+              class="modal-form-message"
+              placeholder="Comment"
+            ></textarea>
+          </label>
+
+          <button type="submit" class="modal-send-btn">
+            <span class="modal-send-text">Submit</span>
+          </button>
+        </form>
+      </div>
+    </div>
