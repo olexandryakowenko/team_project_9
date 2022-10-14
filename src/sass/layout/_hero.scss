@@ -95,12 +95,19 @@
     margin: 0;
     padding: 0;
     line-height: 0;
-    animation: pulse 5s infinite;
+    // animation: pulse 5s infinite;
     
     @media screen and (min-width: 768px) {
     display: flex;
     gap: 33px;
     align-items: center;
+
+    &:hover .hero__icon,
+    &:focus .hero__icon{
+        // scale: 1.2;
+        fill: black;
+    }
+
     @media screen and (min-width: 1200px) {
       gap: 14px;
     }
@@ -111,6 +118,7 @@
     height: 20px;
     cursor: url(../images/cursor.svg), default;
     fill: var(--primary-text-color);
+    scale: 1;
   }
 }
 
@@ -134,6 +142,8 @@
   @media screen and (min-width: 1200px) {
     gap: 12px;
     margin-bottom: 42px;
+
+    align-items: center;
   }
 }
 .hero-primary-button {
